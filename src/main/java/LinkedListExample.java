@@ -4,11 +4,22 @@ import java.util.List;
 
 public class LinkedListExample {
     public static void main(String[] args) {
-        List<Integer> linkedList = new LinkedList<>();
-        List<Integer> arrayList = new ArrayList<>();
+        MyLinkedList myLinkedList = new MyLinkedList();
+        myLinkedList.add(1);
+        myLinkedList.add(2);
+        myLinkedList.add(11);
+//        System.out.println(myLinkedList);
+//
+//        System.out.println(myLinkedList.get(2));
 
-        measureTime(linkedList);
-        measureTime(arrayList);
+        myLinkedList.remove(0);
+        System.out.println(myLinkedList);
+
+//        List<Integer> linkedList = new LinkedList<>();
+//        List<Integer> arrayList = new ArrayList<>();
+//
+//        measureTime(linkedList);
+//        measureTime(arrayList);
     }
 
     private static void measureTime(List<Integer> list) {
