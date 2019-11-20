@@ -35,4 +35,13 @@ class Person {
         result = 31 * result + (name != null ? name.hashCode() : 0);
         return result;
     }
+
+    /*
+        Контракт hashCode() equals()
+        1) У двух проверяемых объектов вызываем метод hashCode(), если хэши разные -> объекты точно разные.
+
+        2) Если хэши одинаковые -> equals()
+
+        3) equals() -> выдает ответ
+     */
 }
